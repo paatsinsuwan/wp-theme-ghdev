@@ -1,0 +1,285 @@
+body {
+	margin: 0px 0px;
+	font-family: 'Open Sans', sans-serif;
+	z-index: 0;
+}
+#main-landing-container {
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 100px 0;
+}
+#container {
+	width: 940px;
+	margin: 50px auto 0px;
+	font-weight: 300;
+}
+.main-navigation li.current-menu-item a{
+	font-weight: 800;
+	color: #444;
+}
+.main-navigation li.current-menu-item {
+/*	border-bottom: solid 2px #000;*/
+}
+.main-navigation li .sub-navigation {
+	display: none;
+	min-width: 250px;
+}
+.main-navigation {
+	margin: 0px;
+	z-index: 0;
+}
+.main-navigation li {
+	display: inline-block;
+	margin: 20px;
+	min-width: 120px;
+	text-align: center;
+}
+.main-navigation li a {
+/*	letter-spacing: 2px;*/
+	color: #888;
+	text-decoration: none;
+	font-size: 28px;
+	text-transform: capitalize;
+	font-weight: 600;
+}
+.main-navigation li a:hover {
+	font-weight: 800;
+	color: #444;
+}
+.main-navigation li:hover > .sub-navigation {
+	padding: 0;
+	margin: 0;
+	display: block;
+	position: absolute;
+	background: transparent;
+}
+.sub-navigation {
+	margin: 0px;
+}
+.sub-navigation li {
+	display: block;
+	margin: 5px 20px;
+	padding: 0px 20px;
+	background: transparent;
+	text-align: left;
+}
+.sub-navigation li a {
+	color: #888 !important;
+	font-size: 16px;
+	font-weight: 600 !important;
+}
+.sub-navigation li a:hover {
+	color: #444 !important;
+	font-weight: 800 !important;
+}
+
+.entry-title {
+	text-transform: capitalize;
+}
+
+
+/*
+ * Work Template Part
+ */
+#loading-wrapper {
+	width: 800px;
+	height: 300px;
+	margin: 0px auto;
+}
+#work-list{
+	display: none;
+}
+#work-list li{
+	list-style-type: none;
+	display: inline;
+	float: left;
+	width: 150px;
+	margin: 10px 30px;
+	height: 100px;
+}
+#work-list li .work-item-wrapper .work-item-front .post-video-item{
+	padding: 0;
+	margin: 0;
+	width: 150px;
+	height: 100px;
+}
+
+#work-list li a  , 
+#work-list li a:hover  , 
+#work-list li a:visited {
+	color: #fff;
+	text-decoration: none !important;
+}
+
+#work-list li a .work-item-wrapper .face span{
+	word-wrap: break-word;
+	font-size: 12px;
+	padding: 20px 10px 10px;
+}
+
+.work .entry-title {
+	font-size: 24px;
+	margin: 0;
+	font-weight: 400;
+}
+
+.work-item-wrapper {
+	height: 100px;
+	width: 150px;
+}
+
+.work-item-wrapper .face {
+	position : absolute;
+	width: 150px;
+	height: 100px;
+	background-color: rgba(25, 25, 25, 1);
+}
+.work-item-wrapper .work-item-front.face.type-image {
+	background-color: rgba(25, 25, 25, 0.7);
+}
+
+.work-item-wrapper .work-item-front {
+	z-index: 900;
+	
+	-webkit-transform: rotateY(0deg);
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	
+	-moz-transform: rotateY(0deg);
+	-moz-transform-style: preserve-3d;
+	-moz-backface-visibility: hidden;
+	
+	-ms-transform: rotateY(0deg);
+	-ms-transform-style: preserve-3d;
+	-ms-backface-visibility: hidden;
+	
+	-o-transform: rotateY(0deg);
+	-o-transform-style: preserve-3d;
+	-o-backface-visibility: hidden;
+
+	/* -- transition is the magic sauce for animation -- */
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.work-item-wrapper.flip .work-item-front {
+	z-index: 900;
+	
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+}
+
+.work-item-wrapper .work-item-back {
+	z-index: 800;
+	
+	-webkit-transform: rotateY(-180deg);
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+
+	-moz-transform: rotateY(-180deg);
+	-moz-transform-style: preserve-3d;
+	-moz-backface-visibility: hidden;
+	
+	-ms-transform: rotateY(-180deg);
+	-ms-transform-style: preserve-3d;
+	-ms-backface-visibility: hidden;
+	
+	-o-transform: rotateY(-180deg);
+	-o-transform-style: preserve-3d;
+	-o-backface-visibility: hidden;
+
+	/* -- transition is the magic sauce for animation -- */
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.work-item-wrapper.flip .work-item-back {
+	z-index: 1000;
+
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+}
+
+.work .entry-meta{
+	margin: 10px 0px;
+}
+.work_type .entry-content {
+	text-align: center;
+}
+.work_type .entry-content img{
+/*	margin: 15% 0;*/
+}
+
+
+/*
+ * Collaborator Template Part
+ */
+.collaborator .entry-title {
+	font-size: 30px;
+	margin: 0;
+	font-weight: 400;
+}
+
+.collaborator .profile-image {
+	float: left;
+	clear: none;
+	padding: 0px 20px 20px 0px;
+}
+
+div.collaborator-wrapper ul{
+	list-style-type: none;
+}
+
+div.collaborator-wrapper ul a{
+	color: #000;
+	text-decoration: none;
+}
+
+li.collaborator {
+	float: left;
+	display: inline;
+	width: 120px;
+	padding: 10px 30px;
+}
+
+li.collaborator p {
+	text-align: center;
+	margin: 1em 0;
+}
+
+/* Fancybox Stuffs */
+#fancybox-container {
+	width: 100%;
+	min-height: 400px;
+}
+
+.work .entry-title{
+	margin-bottom: 10px;
+}
+
+#fancybox-container #content .entry-content{
+	text-align: center;
+}
+#fancybox-container #content .entry-content p{
+	text-align: left;
+}
+
+/* Footer */
+#footer {
+	clear: both;
+	text-align: center;
+	font-size: 12px;
+	position: absolute;
+	bottom: 0;
+	width: 940px;
+	padding: 0 0 20px;
+}
