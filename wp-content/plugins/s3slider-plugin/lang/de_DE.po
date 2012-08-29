@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-09-09 19:51-0300\n"
+"PO-Revision-Date: 2011-06-20 06:58+0100\n"
+"Last-Translator: vaddi <vaddi@exigem.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: s3slider-panel.php:54
+msgid "Sorry. Only JPG format is supported until now."
+msgstr "Leider wird zur Zeit nur das JPG Bildformat unterstützt."
+
+#: s3slider-panel.php:124
+msgid "Original image"
+msgstr "Original Bild"
+
+#: s3slider-panel.php:125
+msgid "Click and drag to select the crop area"
+msgstr "Klicken und ziehen um den Ausschnittsbereich zu wählen."
+
+#: s3slider-panel.php:128
+msgid "Slide preview"
+msgstr "Slider Vorschau"
+
+#: s3slider-panel.php:134
+msgid "Image text"
+msgstr "Bildtext"
+
+#: s3slider-panel.php:144
+msgid "Crop"
+msgstr "Zuschneiden"
+
+#: s3slider-panel.php:153
+msgid "Add New"
+msgstr "Hinzufügen"
+
+#: s3slider-panel.php:154
+msgid "Options"
+msgstr "Optionen"
+
+#: s3slider-panel.php:162
+msgid "Warning"
+msgstr "Warnung"
+
+#: s3slider-panel.php:162
+#, php-format
+msgid "The permissions to the directory <b>%s</b> are invalid. Set them to 777 to be able to upload files."
+msgstr "Die Zugriffsrechte des Verzeichnisses <b>%s</b> verbieten das Schreiben. Setzen Sie die Zugriffsrechte auf 777 um die Bilder speichern zu können."
+
+#: s3slider-panel.php:169
+msgid "File"
+msgstr "Datei"
+
+#: s3slider-panel.php:172
+msgid "Send File"
+msgstr "Datei senden"
+
+#: s3slider-panel.php:186
+msgid "Width"
+msgstr "Breite"
+
+#: s3slider-panel.php:190
+msgid "Height"
+msgstr "Höhe"
+
+#: s3slider-panel.php:194
+msgid "Timeout"
+msgstr "Timeout"
+
+#: s3slider-panel.php:198
+msgid "Save"
+msgstr "Speichern"
+
+#: s3slider-panel.php:208
+#: s3slider-panel.php:217
+msgid "Order"
+msgstr "Reihenfolge"
+
+#: s3slider-panel.php:209
+#: s3slider-panel.php:218
+msgid "Image"
+msgstr "Bild"
+
+#: s3slider-panel.php:210
+#: s3slider-panel.php:219
+msgid "Text"
+msgstr "Text"
+
+#: s3slider-panel.php:235
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: s3slider-panel.php:236
+msgid "Remove"
+msgstr "Entfernen"
+
+#: s3slider-panel.php:237
+msgid "Change Order"
+msgstr "Reihenfolge ändern"
+
+#: s3slider-panel.php:250
+msgid "No images uploaded yet."
+msgstr "Noch kein Bild hoch geladen."
+
+#: s3slider-panel.php:310
+msgid "Quality"
+msgstr "Qualität"
+
+#: s3slider-panel.php:313
+msgid "Number Between 1 and 100, with 100 being the highest quality"
+msgstr "Zahl zwischen 1 bis 100, wobei 100 die Beste Qualität ausgibt"
+

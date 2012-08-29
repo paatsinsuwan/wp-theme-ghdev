@@ -1,22 +1,37 @@
 <?php
 /**
- * WordPress Template: Footer
+ * The template for displaying the footer.
  *
- * The footer template is used as the primary footer for your website.
+ * Contains the closing of the id=main div and all content after
  *
- * @package 7THAVEN
- * @subpackage Template
+ * @package WordPress
+ * @subpackage Twenty_Eleven
+ * @since Twenty Eleven 1.0
  */
 ?>
-<div id="footer" role="footer">
-	<div id="copyright">
-		Copyright&copy; <?php echo date("Y"); ?> 7thaven 
-	</div>
-	<div id="design">
-		Designed/Developed by Paat Sinsuwan
-	</div>
-</div>
-<?php wp_footer() ?>
+
+	</div><!-- #main -->
+</div><!-- #page -->
+<footer id="colophon" role="contentinfo">
+
+		<?php
+			/* A sidebar in the footer? Yep. You can can customize
+			 * your footer with three columns of widgets.
+			 */
+			if ( ! is_404() )
+				get_sidebar( 'footer' );
+		?>
+
+		<div id="site-generator">
+			<div id="copy">
+				Copyright <?php echo date("Y"); ?> Group Hotels, Inc.
+			</div>
+			<div id="privacy">
+				<a href="">Privacy Statement</a>&nbsp;&nbsp;<a href="">Term of Use</a>
+			</div>
+		</div>
+</footer><!-- #colophon -->
+<?php wp_footer(); ?>
 
 </body>
 </html>

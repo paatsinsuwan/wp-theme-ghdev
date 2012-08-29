@@ -1,0 +1,14 @@
+.s3slider_box { margin:10px 0px; }
+#s3slider_addnew { display:none; }
+#s3slider_options { display:none; }
+#s3slider_options input { width:40px; }
+
+#image { border:1px solid #888; }
+#preview { border:1px solid #888; }
+#crop_button { float:left; margin:20px 0px; }
+
+.order { margin:5px 0px; display:none; }
+.order_value { width: 30px; }
+
+#banner{margin:0 auto;padding:0px;}
+#banner ul li{background:none;}

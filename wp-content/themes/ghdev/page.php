@@ -1,24 +1,31 @@
 <?php
 /**
- * WordPress Template: Page
+ * The template for displaying all pages.
  *
- * The page template is used for Pages.
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site will use a
+ * different template.
  *
- * @package 7thaven
- * @subpackage Template
+ * @package WordPress
+ * @subpackage Twenty_Eleven
+ * @since Twenty Eleven 1.0
  */
 
-get_template_part( 'header' ); ?>
+get_header(); ?>
 
-<?php if (have_posts()): ?>
-	<?php do_action('loop_open') ?>
-		<?php while(have_posts()) : the_post(); ?>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-			<div class="entry-content">
-				<?php the_content(); ?>
-			</div>
-		<?php endwhile; ?>
-	<?php do_action('loop_close') ?>
-<?php endif ?>
+		<div id="primary">
+			<div id="content" role="main">
 
-<?php get_template_part( 'footer' ); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+
+					<?php get_template_part( 'content', 'page' ); ?>
+
+					<?php comments_template( '', true ); ?>
+
+				<?php endwhile; // end of the loop. ?>
+
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+<?php get_footer(); ?>

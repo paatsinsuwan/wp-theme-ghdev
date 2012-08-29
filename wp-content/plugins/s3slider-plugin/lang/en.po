@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-09-09 19:51-0300\n"
+"PO-Revision-Date: 2009-09-09 19:52-0300\n"
+"Last-Translator: Vinicius Andre Massuchetto <viniciusandre@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: s3slider-panel.php:54
+msgid "Sorry. Only JPG format is supported until now."
+msgstr ""
+
+#: s3slider-panel.php:124
+msgid "Original image"
+msgstr ""
+
+#: s3slider-panel.php:125
+msgid "Click and drag to select the crop area"
+msgstr ""
+
+#: s3slider-panel.php:128
+msgid "Slide preview"
+msgstr ""
+
+#: s3slider-panel.php:134
+msgid "Image text"
+msgstr ""
+
+#: s3slider-panel.php:144
+msgid "Crop"
+msgstr ""
+
+#: s3slider-panel.php:153
+msgid "Add New"
+msgstr ""
+
+#: s3slider-panel.php:154
+msgid "Options"
+msgstr ""
+
+#: s3slider-panel.php:162
+msgid "Warning"
+msgstr ""
+
+#: s3slider-panel.php:162
+#, php-format
+msgid "The permissions to the directory <b>%s</b> are invalid. Set them to 777 to be able to upload files."
+msgstr ""
+
+#: s3slider-panel.php:169
+msgid "File"
+msgstr ""
+
+#: s3slider-panel.php:172
+msgid "Send File"
+msgstr ""
+
+#: s3slider-panel.php:186
+msgid "Width"
+msgstr ""
+
+#: s3slider-panel.php:190
+msgid "Height"
+msgstr ""
+
+#: s3slider-panel.php:194
+msgid "Timeout"
+msgstr ""
+
+#: s3slider-panel.php:198
+msgid "Save"
+msgstr ""
+
+#: s3slider-panel.php:208
+#: s3slider-panel.php:217
+msgid "Order"
+msgstr ""
+
+#: s3slider-panel.php:209
+#: s3slider-panel.php:218
+msgid "Image"
+msgstr ""
+
+#: s3slider-panel.php:210
+#: s3slider-panel.php:219
+msgid "Text"
+msgstr ""
+
+#: s3slider-panel.php:235
+msgid "Edit"
+msgstr ""
+
+#: s3slider-panel.php:236
+msgid "Remove"
+msgstr ""
+
+#: s3slider-panel.php:237
+msgid "Change Order"
+msgstr ""
+
+#: s3slider-panel.php:250
+msgid "No images uploaded yet."
+msgstr ""
+
