@@ -13,7 +13,7 @@ Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, ri
 
 /*Fonts*/
 @import url(http://fonts.googleapis.com/css?family=Quattrocento:400,700);
-
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
@@ -79,7 +79,7 @@ body {
 	margin: 0;
 }
 #page {
-	margin: 0 auto;
+	margin: 0 auto 200px;
 	max-width: 1000px;
 }
 #branding hgroup {
@@ -100,7 +100,7 @@ body {
 }
 #home_primary {
 	float: left;
-	margin: 0;
+	margin: 0 0 4em 0;
 	width: 70%;
 }
 .section-break {
@@ -563,10 +563,11 @@ a:hover {
 
 #access {
 	background: #222; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#252525, #0a0a0a);
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFElEQVQIW2NkYGD4r6KiwsBIBAMAn40HHYPa+2MAAAAASUVORK5CYII=) repeat;
+	/*background: -moz-linear-gradient(#252525, #0a0a0a);
 	background: -o-linear-gradient(#252525, #0a0a0a);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#252525), to(#0a0a0a)); /* older webkit syntax */
-	background: -webkit-linear-gradient(#252525, #0a0a0a);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#252525), to(#0a0a0a)); /* older webkit syntax 
+	background: -webkit-linear-gradient(#252525, #0a0a0a);*/
 	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
@@ -588,9 +589,17 @@ a:hover {
 }
 #access a {
 	color: #eee;
+	/*background: #025172;*/
+	background: -moz-radial-gradient(#025172, #035D7C);
+	background: -o-radial-gradient(#025172, #035D7C);
+	background: -webkit-gradient(radial, 0% 0%, 0% 100%, from(#025172), to(#035D7C)); /* Older webkit syntax */
+	background: -webkit-radial-gradient(#025172, #035D7C);
+	border: 2px solid #036d92;
+	border-radius: 5px;
 	display: block;
-	line-height: 3.333em;
-	padding: 0 1.2125em;
+	line-height: 1.85em;
+	padding: 0 0.675em;
+	margin: 1em 1.25em;
 	text-decoration: none;
 }
 #access ul ul {
@@ -643,6 +652,7 @@ a:hover {
 #access .current_page_item > a,
 #access .current_page_ancestor > a {
 	font-weight: bold;
+	color: #f48727;
 }
 
 /* Search Form */
@@ -2233,10 +2243,11 @@ footer {
 
 #colophon {
 	clear: both;
+	position: relative;
 }
 #supplementary {
 	border-top: 1px solid #ddd;
-	padding: 1.625em 7.6%;
+	padding: 3.625em 7.6% 1.625em;
 	overflow: hidden;
 }
 
@@ -2705,6 +2716,15 @@ footer {
 
 }
 
+/*----- Slideshow ------*/
+
+#banner {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(15%, white), color-stop(100%, #D7E9F5));
+	background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%);
+	-webkit-box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 10px 10px rgba(23, 69, 88, .5);
+}
+
 
 /* =IE7
 ----------------------------------------------- */
@@ -2725,3 +2745,34 @@ footer {
 	margin-right: 7.6%;
 }
 
+
+/*------- Secondary Menu --------*/
+
+.menu-bottom-container {
+	position: absolute;
+	background: none;
+	left: 7em;
+	top: -6em;
+}
+.menu-bottom-container ul{
+	list-style: none;
+}
+.menu-bottom-container ul li{
+	display: inline-block;
+	background: #e67c20;
+	width: 100px;
+	height: 100px;
+	margin: 25px;
+	border-radius: 50px;
+	text-align: center;
+}
+.menu-bottom-container ul li a{
+	padding: 0 15px;
+	width: 100px;
+	height: 100px;
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 80%;
+	font-weight: bold;
+}
