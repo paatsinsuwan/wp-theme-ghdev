@@ -13,7 +13,7 @@ Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, ri
 
 /*Fonts*/
 @import url(http://fonts.googleapis.com/css?family=Quattrocento:400,700);
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
@@ -43,6 +43,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body {
 	background: #fff;
 	line-height: 1;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -77,10 +78,13 @@ footer, header, hgroup, menu, nav, section {
 body {
 	padding: 0;
 	margin: 0;
+	font-family: 'Source Sans Pro'
 }
 #page {
 	margin: 0 auto 200px;
 	max-width: 1000px;
+	position: relative;
+	clear: both;
 }
 #branding hgroup {
 	/*margin: 0 7.6%;*/
@@ -88,6 +92,19 @@ body {
 
 #header-logo {
 	margin: 5px 15px;
+}
+
+#top-info-bar {
+	background: #DDD;
+	margin: 2em auto;
+	width: 95%;
+	text-align: center;
+	color: #0483B9;
+	font-weight: bold;
+	border-radius: 8px;
+	box-shadow: 0px -1px rgba(153, 153, 153, 0.75);
+	padding: 2px 0;
+	font-size: 90%;
 }
 
 #access div {
@@ -103,6 +120,77 @@ body {
 	margin: 0 0 4em 0;
 	width: 70%;
 }
+
+#about_primary {
+	float: left;
+	margin: 0 0 4em 2em;
+	/*width: 100%;*/
+	display: inline;
+}
+
+#about_primary #content {
+	margin: 0 0 0 1.75em;
+	position: relative;
+	width: auto;
+}
+
+#about_primary #content p a{
+	text-decoration: none;
+}
+
+#about_primary #content p a img{
+	padding: 0.45em;
+	background: #0483B9;
+	width: 60%;
+}
+
+#about_primary #content ul {
+	margin: 0;
+	padding: 0;
+}
+
+#about_primary #content ul li {
+	width: 33%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#about_primary #content ul li h2{
+	text-transform: uppercase;
+	font-size: 120%;
+	color: #E57819;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+#about_primary #content ul li div{
+	margin: 0 2.5em 0 0;
+	font-size: 85%;
+}
+
+#about_primary #content ul li div ol li{
+	width: 100%;
+	margin: 0 0 1em 0;
+}
+
+#about_primary #content ul li div ol > li{
+	counter-increment: customlistcounter;
+}
+
+#about_primary #content ul li div ol:first-child{
+	counter-reset: customlistcounter;
+}
+
+#about_primary #content ul li div ol {
+	/*list-style: counter(customlistcounter) inside;*/
+	margin: 0;
+}
+
+#about_primary #content ul li div ol li:before{
+	content: "(" counter(customlistcounter) ")";
+	margin: 0 1em 0 0;
+}
+
 .section-break {
 	background: #e67c20;
 	height: 2px;
@@ -111,10 +199,69 @@ body {
 	margin: 0 34% 0 7.6%;
 	width: 58.4%;
 }
+#about-secondary {
+	float: right;
+	clear: none;
+	margin-right: 7.6%;
+	width: 18.8%;
+}
+
 #secondary {
 	float: right;
 	margin-right: 7.6%;
 	width: 18.8%;
+}
+
+#featured-destinations-primary {
+	width: 100%;
+}
+
+#featured-destinations-primary #content {
+	margin: 0;
+	width: 100%;
+}
+
+#featured-destinations {
+	list-style-type: none;
+	position: relative;
+}
+
+#featured-destinations li {
+	cursor: pointer;
+	width: 25%;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+}
+
+#featured-destinations li:hover div {
+	display: block;
+}
+
+#featured-destinations li img {
+	width: 150px;
+	padding: 0.35em;
+	background: transparent;
+}
+
+#featured-destinations li:hover img {
+	background: #E57819;
+}
+
+
+
+#featured-destinations li div {
+	display: none;
+	position: absolute;
+	text-align: left;
+	top: 10px;
+	left: 150px;
+	width: 300px;
+	background: #eee;
+	box-shadow: 1px 1px #ddd;
+	border-radius: 5px;
+	padding: 10px 20px; 
+	z-index: 9999;
 }
 
 /* Singular */
@@ -337,8 +484,8 @@ body {
 
 body, input, textarea {
 	color: #373737;
-	font: 15px 'Quattrocento', "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 300;
+	font: 15px 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 400;
 	line-height: 1.625;
 }
 body {
@@ -381,6 +528,11 @@ ol ol ol {
 ol ol ol ol {
 	list-style: lower-alpha;
 }
+
+ul ol {
+	list-style: decimal;
+}
+
 ul ul, ol ol, ul ol, ol ul {
 	margin-bottom: 0;
 }
@@ -595,7 +747,7 @@ a:hover {
 	background: -webkit-gradient(radial, 0% 0%, 0% 100%, from(#025172), to(#035D7C)); /* Older webkit syntax */
 	background: -webkit-radial-gradient(#025172, #035D7C);
 	border: 2px solid #036d92;
-	border-radius: 5px;
+	border-radius: 8px;
 	display: block;
 	line-height: 1.85em;
 	padding: 0 0.675em;

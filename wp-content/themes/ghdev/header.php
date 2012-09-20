@@ -88,8 +88,16 @@
 			<?php
 				// Check to see if the header image has been removed
 				// $header_image = get_header_image();
-
-				if (function_exists(s3slider_show())) { s3slider_show(); }
+				if(is_front_page()){
+					if (function_exists(s3slider_show())) { s3slider_show(); }	
+				}
+				else{
+					?>
+					<div id="top-info-bar">
+						For Hassle-Free Booking, Book With Group Hotels! Fill out the form below or phone us: 1 - 877 - 826 - 6548.
+					</div>
+					<?php
+				}
 				//if ( ! empty( $header_image ) ) :
 			?>
 			<!-- <a href="<?php //echo esc_url( home_url( '/' ) ); ?>"> -->

@@ -12,7 +12,7 @@ $current_layout = $options['theme_layout'];
 
 if ( 'content' != $current_layout ) :
 ?>
-		<div id="secondary" class="widget-area" role="complementary">
+		<div id="<?php if(is_page('About')){echo 'about-secondary';}else{ echo 'secondary';} ?>" class="widget-area" role="complementary">
 			<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
 				<aside id="archives" class="widget">
