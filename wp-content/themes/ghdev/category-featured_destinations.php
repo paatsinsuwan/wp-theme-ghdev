@@ -9,28 +9,20 @@
 
 get_header(); ?>
 
+<?php 
+?>
+
 		<section id="featured-destinations-primary">
 			<div id="content" role="main">
 
 			<?php if ( have_posts() ) : ?>
 
-				<!-- <header class="page-header">
-					<h1 class="page-title"><?php
-						//printf( __( 'Category Archives: %s', 'twentyeleven' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-					?></h1>
-
-					<?php
-						$category_description = category_description();
-						//if ( ! empty( $category_description ) )
-						//	echo apply_filters( 'category_archive_meta', '<div class="category-archive-meta">' . $category_description . '</div>' );
-					?>
-				</header> -->
-
-				<?php twentyeleven_content_nav( 'nav-above' ); ?>
-
 				<?php /* Start the Loop */ ?>
 				<ul id="featured-destinations">
 				<?php while ( have_posts() ) : the_post(); ?>
+					<?php 
+						$tax = get_post_custom_values('taxonomy'); 
+					?> 
 					<li>
 					<?php
 						/* Include the Post-Format-specific template for the content.
@@ -38,13 +30,14 @@ get_header(); ?>
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
 						//get_template_part( 'content', get_post_format() );
-						print_r(get_the_post_thumbnail());
+						echo "<a href='".get_bloginfo('siteurl')."/featured-destinations/".$tax[0]."'>" . get_the_post_thumbnail() . "</a>";
+
 					?>
-						<div><?php the_content(); ?></div>
+						<h1><?php the_title(); ?></h1>
+						<div id="content-wrapper"><?php get_template_part( 'content', get_post_format()); ?></div>
 					</li>
 				<?php endwhile; ?>
 				</ul>
-				<?php //twentyeleven_content_nav( 'nav-below' ); ?>
 
 			<?php else : ?>
 
@@ -64,5 +57,4 @@ get_header(); ?>
 			</div><!-- #content -->
 		</section><!-- #primary -->
 
-<?php //get_sidebar(); ?>
 <?php get_footer(); ?>

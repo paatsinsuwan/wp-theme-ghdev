@@ -593,3 +593,82 @@ function twentyeleven_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'twentyeleven_body_classes' );
 
+// Custom Destinations Type
+
+add_action( 'init', 'create_destinations' );
+
+function create_destinations(){
+	$labels = array(
+		'name' => _x('Destinations', 'post type general name'),
+		'singular_name' => _x('Destination', 'post type singular name'),
+		'add_new' => _x('Add New', 'Destination'),
+		'add_new_item' => __('Add New Destination'),
+		'edit_item' => __('Edit Destination'),
+		'new_item' => __('New Destination'),
+		'view_item' => __('View Destination'),
+		'search_items' => __('Search Destinations'),
+		'not_found' =>  __('No Destinations found'),
+		'not_found_in_trash' => __('No Destinations found in Trash'),
+		'parent_item_colon' => ''
+	);
+	$supports = array('title', 'editor', 'custom-fields', 'revisions', 'excerpt', 'thumbnail');
+
+	register_post_type( 'destination',
+			array(
+			'labels' => $labels,
+			'public' => true,
+			'supports' => $supports
+		)
+	);
+
+	add_theme_support( 'post-thumbnails', array('post', 'destination'));
+
+}
+add_filter( 'default_content', 'custom_editor_content' );
+function custom_editor_content( $content ) {
+	global $current_screen;
+
+	if ( $current_screen->post_type == "destination") {
+		$content = "\n\r"
+			."<div class='content-image-wrapper'>\n\r"
+			."<img src='http://lorempixel.com/g/480/320/'' />\n\r"
+			."</div>\n\r"
+			."<div class='content-description-wrapper'>\n\r"
+			."<h1>description</h1>\n\r"
+			."<p>Absolutely need to Change me, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae odio felis. Ut eros turpis, facilisis sit amet tincidunt in, molestie ac ipsum. Donec feugiat pretium nulla dignissim mollis. Vestibulum tincidunt, arcu dictum convallis scelerisque, nunc nibh tincidunt orci, et tristique odio nisl quis est. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam metus nibh, cursus non blandit eu, dignissim ac est. Donec at accumsan purus. Nulla facilisi. Mauris ut nunc ut dolor sodales varius ac at quam.</p>"
+			."</div>\n\r";
+	}
+	return $content;
+}
+
+function custom_editor_style(){
+	global $current_screen;
+
+	if( $current_screen->post_type == "destination" ){
+		add_editor_style('editor-style-destination.css');
+	}
+}
+
+add_action( 'admin_head',  'custom_editor_style' );
+// add_action( 'init', 'create_featured_destinations' );
+
+// function create_featured_destinations() {
+//  $labels = array(
+//     'name' => _x( 'Featured Destinations', 'taxonomy general name' ),
+//     'singular_name' => _x( 'Featured Destination', 'taxonomy singular name' ),
+//     'search_items' =>  __( 'Search Featured Destinations' ),
+//     'all_items' => __( 'All Featured Destinations' ),
+//     'parent_item' => __( 'Parent Featured Destination' ),
+//     'parent_item_colon' => __( 'Parent Featured Destination:' ),
+//     'edit_item' => __( 'Edit Featured Destination' ),
+//     'update_item' => __( 'Update Featured Destination' ),
+//     'add_new_item' => __( 'Add New Featured Destination' ),
+//     'new_item_name' => __( 'New Featured Destination Name' ),
+//   ); 	
+
+//   register_taxonomy('featured_destination','destination',array(
+//     'hierarchical' => true,
+//     'labels' => $labels
+//   ));
+// }
+

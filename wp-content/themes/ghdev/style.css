@@ -233,7 +233,7 @@ body {
 	display: inline-block;
 }
 
-#featured-destinations li:hover div {
+#featured-destinations li:hover div#content-wrapper {
 	display: block;
 }
 
@@ -249,7 +249,7 @@ body {
 
 
 
-#featured-destinations li div {
+#featured-destinations li div#content-wrapper {
 	display: none;
 	position: absolute;
 	text-align: left;
@@ -747,6 +747,7 @@ a:hover {
 	background: -webkit-radial-gradient(#025172, #035D7C);
 	border: 2px solid #036d92;
 	border-radius: 8px;
+	-moz-border-radius: 8px;
 	display: block;
 	line-height: 1.85em;
 	padding: 0 0.675em;
@@ -2915,6 +2916,9 @@ footer {
 	height: 100px;
 	margin: 25px;
 	border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-o-border-radius: 50px;
 	text-align: center;
 }
 .menu-bottom-container ul li a{
@@ -2926,4 +2930,27 @@ footer {
 	color: #fff;
 	font-size: 80%;
 	font-weight: bold;
+}
+
+/*--------------- destinations-primary -----------*/
+#destination-primary {
+
+}
+
+#destination-primary article{
+	padding: 0;
+}
+
+#destination-primary #content ul{
+	list-style-type: none;
+}
+
+#destination-primary #content ul li{
+	display: inline-block;
+}
+
+#destination-primary #content ul li img{
+	width: 200px;
+	padding: 20px;
+	
 }
