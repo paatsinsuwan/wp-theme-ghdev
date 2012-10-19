@@ -115,6 +115,7 @@ body {
 	width: 100%;
 }
 #home_primary {
+	padding-top: 10px;
 	float: left;
 	margin: 0 0 4em 0;
 	width: 70%;
@@ -679,7 +680,7 @@ a:hover {
 
 #branding {
 	/*border-top: 2px solid #bbb;*/
-	padding-bottom: 10px;
+	/*padding-bottom: 10px;*/
 	position: relative;
 	z-index: 9999;
 }
