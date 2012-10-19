@@ -2994,13 +2994,6 @@ footer {
 	vertical-align: top;
 }
 
-#destination-primary #content ul li{
-	width: 200px;
-	text-align: left;
-	margin: 0 auto 1.625em;
-	font-size: 85%;
-}
-
 #destination-primary #content ul li img{
 	width: 200px;
 	padding: 20px;
