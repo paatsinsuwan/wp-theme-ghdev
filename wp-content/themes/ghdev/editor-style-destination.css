@@ -1,3 +1,51 @@
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
+   j.mp/bestclearfix */
+
+.clearfix:before, .clearfix:after {
+    content: "\0020"; 
+    display: block; 
+    height: 0; 
+    overflow: hidden;
+}
+
+.clearfix:after { clear: both; }
+
+/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+
+.clearfix { zoom: 1; }
+
+div {
+    border: 1px dotted;    
+}
+
+div.row div{
+	padding: 5px;
+}
+
+div.row {
+	width: 120%;
+}
+div#content-bottom div{
+	width: 45%;
+}
+
+div.left {
+	float: left;
+}
+
+div.right {
+	float: right;
+}
+
 div.content-image-wrapper img {
 	width: 300px;
 }
+
+.content-image-wrapper {
+	width: 60%;
+}
+
+.content-description-wrapper {
+	width: 30%;
+}
+

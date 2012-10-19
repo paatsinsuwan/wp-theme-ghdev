@@ -624,32 +624,51 @@ function create_destinations(){
 	add_theme_support( 'post-thumbnails', array('post', 'destination'));
 
 }
+
 add_filter( 'default_content', 'custom_editor_content' );
 function custom_editor_content( $content ) {
 	global $current_screen;
 
 	if ( $current_screen->post_type == "destination") {
 		$content = "\n\r"
-			."<div class='content-image-wrapper'>\n\r"
-			."<img src='http://lorempixel.com/g/480/320/'' />\n\r"
+			."<div class='row clearfix' id='content-top'>"
+			."<div class='content-image-wrapper left'>\n\r"
+			."REPLACE IT WITH IMAGE\n\r"
 			."</div>\n\r"
-			."<div class='content-description-wrapper'>\n\r"
-			."<h1>description</h1>\n\r"
+			."<div class='content-description-wrapper right'>\n\r"
 			."<p>Absolutely need to Change me, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae odio felis. Ut eros turpis, facilisis sit amet tincidunt in, molestie ac ipsum. Donec feugiat pretium nulla dignissim mollis. Vestibulum tincidunt, arcu dictum convallis scelerisque, nunc nibh tincidunt orci, et tristique odio nisl quis est. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam metus nibh, cursus non blandit eu, dignissim ac est. Donec at accumsan purus. Nulla facilisi. Mauris ut nunc ut dolor sodales varius ac at quam.</p>"
+			."</div>\n\r"
+			."</div>\n\r"
+			."<div class='row clearfix' id='content-bottom'>"
+			."<div class='content-tours-wrapper left'>\n\r"
+			."<h1>Take a Group Tour of REPLACE ME</h1>\n\r"
+			."<ul>\n\r"
+			."<li>REPLACE ME</li>"
+			."</ul>\n\r"
+			."</div>\n\r"
+			."<div class='content-hotels-wrapper right'>\n\r"
+			."<h1>Top Hotels</h1>\n\r"
+			."<ul>\n\r"
+			."<li>REPLACE ME</li>"
+			."</ul>\n\r"
+			."</div>\n\r"
 			."</div>\n\r";
 	}
 	return $content;
 }
 
-function custom_editor_style(){
-	global $current_screen;
+function custom_editor_style() {
+   global $current_screen;
+   add_editor_style(
+   array(
+      'editor-style.css',
+      'editor-style-'.$current_screen->post_type.'.css'
+    )
+   );
+ }
 
-	if( $current_screen->post_type == "destination" ){
-		add_editor_style('editor-style-destination.css');
-	}
-}
+ add_action( 'admin_head', 'custom_editor_style' );
 
-add_action( 'admin_head',  'custom_editor_style' );
 // add_action( 'init', 'create_featured_destinations' );
 
 // function create_featured_destinations() {
