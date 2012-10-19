@@ -20,7 +20,7 @@ get_header(); ?>
 						// The $tax
 						$tax = get_post_custom_values('taxonomy');
 						// The $agrs
-						$args = array('post_type' => 'post', 'tag' => $tax[0]);
+						$args = array('post_type' => 'post', 'tag' => $tax[0], 'posts_per_page' => 3);
 						// The Query
 						query_posts( $args );
 
