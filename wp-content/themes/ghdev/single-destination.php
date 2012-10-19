@@ -24,11 +24,13 @@ get_header(); ?>
 						// The Query
 						query_posts( $args );
 
+						echo '<h1>Latest ' . str_replace('-', " ", $tax[0]) . ' blog posts</h1>';
 						// The Loop
 						echo '<ul>';
 						while ( have_posts() ) : the_post();
 							echo '<li>';
 							echo "<a href='".get_permalink()."'>" . get_the_post_thumbnail() . "</a>";
+							echo '<div>' . the_excerpt() . '</div>';
 							echo '</li>';
 						endwhile;
 						echo '</ul>';

@@ -80,7 +80,7 @@ body {
 	font-family: 'Source Sans Pro'
 }
 #page {
-	margin: 0 auto 200px;
+	margin: 0 auto 100px;
 	max-width: 1000px;
 	position: relative;
 	clear: both;
@@ -2901,6 +2901,21 @@ footer {
 	margin-right: 7.6%;
 }
 
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
+   j.mp/bestclearfix */
+
+.clearfix:before, .clearfix:after {
+    content: "\0020"; 
+    display: block; 
+    height: 0; 
+    overflow: hidden;
+}
+
+.clearfix:after { clear: both; }
+
+/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+
+.clearfix { zoom: 1; }
 
 /*------- Secondary Menu --------*/
 
@@ -2945,18 +2960,48 @@ footer {
 	padding: 0;
 }
 
+#destination-primary #content {
+	margin: 0 1.525em;
+	position: relative;
+	width: auto;
+	background-color: rgba(225,225,225,0.75);
+	padding: 0 1em;
+	border-radius: 10px;
+}
+
+#destination-primary #content .entry-content {
+	width: 100%;
+}
+
 #destination-primary #content ul{
 	list-style-type: none;
 }
 
 #destination-primary #content ul li{
 	display: inline-block;
+	width: 33%;
+	text-align: center;
 }
 
 #destination-primary #content ul li img{
 	width: 200px;
 	padding: 20px;
 	
+}
+
+#destination-primary .content-image-wrapper.left {
+	float: left;
+	width: 70%;
+	margin-right: 1.5em;
+	padding: 0em;
+}
+
+#destination-primary #content-bottom {
+	padding: 0 0 1em 0;
+}
+#destination-primary #content-bottom div {
+
+    float: left;
 }
 
 /*-------------- faqs-primary --------------------*/
