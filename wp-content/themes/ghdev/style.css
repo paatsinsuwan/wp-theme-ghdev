@@ -2021,6 +2021,14 @@ section.ephemera .entry-title a span {
 	color: #fff;
 }
 
+#secondary .textwidget {
+	width: 140%;
+	background: #ddd;
+	padding: 2em;
+	color: #000;
+	border-radius: 10px;
+}
+
 #endorsements li{
 	display: inline-block;
 	margin: 5px;
