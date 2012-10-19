@@ -212,8 +212,8 @@ body {
 
 #secondary {
 	float: right;
-	margin-right: 7.6%;
 	width: 18.8%;
+	margin: 2em 9.3em 0 0;
 }
 
 #featured-destinations-primary {
