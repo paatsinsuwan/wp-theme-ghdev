@@ -30,7 +30,7 @@ get_header(); ?>
 						while ( have_posts() ) : the_post();
 							echo '<li>';
 							echo "<a href='".get_permalink()."'>" . get_the_post_thumbnail() . "</a>";
-							echo '<div>' . the_excerpt() . '</div>';
+							echo the_excerpt();
 							echo '</li>';
 						endwhile;
 						echo '</ul>';

@@ -2956,6 +2956,10 @@ footer {
 
 }
 
+#destination-primary h1{
+	font-weight: bold;
+}
+
 #destination-primary article{
 	padding: 0;
 }
@@ -2988,6 +2992,13 @@ footer {
 	width: 33%;
 	text-align: center;
 	vertical-align: top;
+}
+
+#destination-primary #content ul li{
+	width: 200px;
+	text-align: left;
+	margin: 0 auto 1.625em;
+	font-size: 85%;
 }
 
 #destination-primary #content ul li img{
