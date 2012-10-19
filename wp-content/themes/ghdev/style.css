@@ -2985,6 +2985,7 @@ footer {
 
 #destination-primary #content ul{
 	list-style-type: none;
+	margin: 0;
 }
 
 #destination-primary #content ul li{
