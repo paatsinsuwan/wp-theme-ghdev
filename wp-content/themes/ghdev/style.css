@@ -731,7 +731,7 @@ a:hover {
 #access ul {
 	font-size: 13px;
 	list-style: none;
-	margin: 0 0 0 -0.8125em;
+	margin: 0 0 0 3.8125em;
 	padding-left: 0;
 }
 #access li {
@@ -2390,10 +2390,11 @@ p.comment-form-comment {
 
 footer {
 	background: #025172;
-	padding-bottom: 1.625em;
+	padding: 0 3.825em 1.625em;
 }
 
 #colophon {
+
 	clear: both;
 	position: relative;
 }
@@ -2953,4 +2954,40 @@ footer {
 	width: 200px;
 	padding: 20px;
 	
+}
+
+/*-------------- faqs-primary --------------------*/
+
+#faqs-primary{}
+#faqs-primary #content{
+	margin: 0;
+	width: 100%;
+}
+#faqs-primary #back-to-top{
+	position: fixed;
+	right: 5%;
+	bottom: 10%;
+	z-index: 9999;
+}
+#faqs-primary #back-to-top a{
+	color:#E67C20;
+}
+#faqs-primary #content #the-questions{
+	float: left;
+	width: 25%;
+}
+#faqs-primary #content #the-questions ul{
+	list-style-type: none;
+}
+#faqs-primary #content #the-questions ul li{
+	margin-bottom: 10px;
+	font-size: 90%;
+}
+#faqs-primary #content #the-answers{
+	float: right;
+	width: 65%;
+	margin-right: 20px;
+}
+#faqs-primary #content #the-answers h2{
+	font-weight: bold;
 }

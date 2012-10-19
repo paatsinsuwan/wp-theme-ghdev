@@ -12,7 +12,7 @@ get_header(); ?>
 
 	<section id="featured-destinations-primary">
 		<div id="content" role="main">
-		<?php query_posts(array('post_type'=>'destination')); ?>
+		<?php query_posts(array('post_type'=>'destination', 'posts_per_page' => -1)); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
