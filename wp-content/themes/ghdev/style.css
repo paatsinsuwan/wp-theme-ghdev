@@ -121,6 +121,10 @@ body {
 	width: 70%;
 }
 
+#home_primary ul {
+	list-style-image: url(images/favicon.ico);
+}
+
 #about_primary {
 	float: left;
 	margin: 0 0 4em 2em;
@@ -2015,6 +2019,11 @@ section.ephemera .entry-title a span {
 
 .textwidget #endorsements li{
 	color: #fff;
+}
+
+#endorsements li{
+	display: inline-block;
+	margin: 5px;
 }
 
 .widget_text{
