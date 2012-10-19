@@ -2960,6 +2960,11 @@ footer {
 	padding: 0;
 }
 
+#destination-primary article .entry-header {
+	width: 100%;
+	margin: 0px;
+}
+
 #destination-primary #content {
 	margin: 0 1.525em;
 	position: relative;
@@ -2971,6 +2976,7 @@ footer {
 
 #destination-primary #content .entry-content {
 	width: 100%;
+	padding: 0;
 }
 
 #destination-primary #content ul{
@@ -2981,12 +2987,12 @@ footer {
 	display: inline-block;
 	width: 33%;
 	text-align: center;
+	vertical-align: top;
 }
 
 #destination-primary #content ul li img{
 	width: 200px;
 	padding: 20px;
-	
 }
 
 #destination-primary .content-image-wrapper.left {
