@@ -19,7 +19,7 @@ get_header(); ?>
 			<div id="content" role="main" class="clearfix">
 
 				<?php while ( have_posts() ) : the_post(); ?>
-					<?php get_template_part('content', get_post_format()); ?>
+					<?php get_template_part('content', 'contact_us'); ?>
 				<?php endwhile; ?>
 
 			</div><!-- #content -->
