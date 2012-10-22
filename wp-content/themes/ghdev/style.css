@@ -149,7 +149,7 @@ body {
 }
 
 #about_primary #content ul {
-	margin: 0;
+	margin: 4em 0 0;
 	padding: 0;
 }
 
@@ -206,8 +206,20 @@ body {
 #about-secondary {
 	float: right;
 	clear: none;
-	margin-right: 7.6%;
+	margin-right: 15.6%;
 	width: 18.8%;
+}
+
+#about-secondary .textwidget {
+	width: 140%;
+	background: #ddd;
+	padding: 2em;
+	color: #000;
+	border-radius: 10px;
+}
+
+#contact_primary article {
+	padding-top: 0;
 }
 
 #secondary {
@@ -272,7 +284,7 @@ body {
 
 /* Singular */
 .singular #primary {
-	margin: 0;
+	margin: 0 0 3em;
 }
 
 .singular #content,
@@ -287,6 +299,10 @@ body {
 .singular #comments-title {
 	margin: 0 auto;
 	width: 68.9%;
+}
+
+footer.entry-meta a {
+	color: #e67c20;
 }
 
 /* Attachments */

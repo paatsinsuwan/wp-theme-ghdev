@@ -23,6 +23,15 @@
 			<?php endif; ?>
 		</header><!-- .entry-header -->
 
+		<footer class="entry-meta">
+			<?php twentyeleven_posted_on(); ?>
+			<?php if ( comments_open() ) : ?>
+			<span class="sep"> | </span>
+			<span class="comments-link"><?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'twentyeleven' ) . '</span>', __( '<b>1</b> Reply', 'twentyeleven' ), __( '<b>%</b> Replies', 'twentyeleven' ) ); ?></span>
+			<?php endif; ?>
+			<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
+		</footer><!-- #entry-meta -->
+
 		<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
@@ -36,12 +45,4 @@
 		</div><!-- .entry-content -->
 		<?php endif; ?>
 
-		<footer class="entry-meta">
-			<?php twentyeleven_posted_on(); ?>
-			<?php if ( comments_open() ) : ?>
-			<span class="sep"> | </span>
-			<span class="comments-link"><?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'twentyeleven' ) . '</span>', __( '<b>1</b> Reply', 'twentyeleven' ), __( '<b>%</b> Replies', 'twentyeleven' ) ); ?></span>
-			<?php endif; ?>
-			<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
-		</footer><!-- #entry-meta -->
 	</article><!-- #post-<?php the_ID(); ?> -->
