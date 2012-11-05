@@ -2039,7 +2039,7 @@ section.ephemera .entry-title a span {
 
 #secondary .textwidget {
 	width: 140%;
-	background: #ddd;
+	background: #e4e4e4;
 	padding: 2em;
 	color: #000;
 	border-radius: 10px;
@@ -3089,4 +3089,43 @@ footer {
 }
 #faqs-primary #content #the-answers h2{
 	font-weight: bold;
+}
+
+/*------- Social links --------*/
+.social-links {
+    float: right;
+}
+.social-links.clearfix ul li {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    border: none;
+    margin: 0 0.5em;
+}
+
+.social-links.clearfix ul.clearfix li#facebook-button a{
+	background-position: -96px -32px !important;
+}
+
+.social-links.clearfix ul li#twitter-button a{
+	background-position: -128px -32px !important;
+}
+
+.social-links.clearfix ul li a {
+	border: none !important;
+	border-radius: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-indent: -999px;
+    font-size: 0px;
+    line-height: 0px;
+    overflow: hidden;
+    width: 32px;
+    height: 32px;
+    background: url(images/social-media.png) no-repeat !important;
+    display: block;
+}
+.social-links.clearfix ul {
+    padding: 0 !important;
+    margin: 1em 5em 0 0 !important;
 }

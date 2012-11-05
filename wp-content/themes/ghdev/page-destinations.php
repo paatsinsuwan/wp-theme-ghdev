@@ -72,11 +72,23 @@ get_header(); ?>
 		<script src="<?php bloginfo('template_url'); ?>/js/jquery.tabSlideOut.v1.3.js"></script>
 		<style type="text/css">
 		.slide-out-div {
-			background: #ccc;
+			background: #e4e4e4;
 			width: 300px;
 			padding: 10px;
 			z-index: 9999;
 			height: 380px;
+			border-bottom-left-radius: 5px;
+			border-top: 1px solid rgba(0, 0, 0, 0.3);
+			border-left: 1px solid rgba(0, 0, 0, 0.3);
+			border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+		}
+		.slide-out-div .handle {
+			border-bottom-left-radius: 5px;
+			border-top-left-radius: 5px;
+			border-top: 1px solid rgba(0, 0, 0, 0.3);
+			border-left: 1px solid rgba(0, 0, 0, 0.3);
+			border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+			top: -1px !important;
 		}
 		.slide-out-div #secondary {
 			width: 60%;
@@ -92,13 +104,13 @@ get_header(); ?>
 			jQuery(function(){
 			        jQuery('.slide-out-div').tabSlideOut({
 			            tabHandle: '.handle',                     //class of the element that will become your tab
-			            pathToTabImage: '<?php bloginfo("template_url"); ?>/images/booknow.png', //path to the image for the tab //Optionally can be set using css
-			            imageHeight: '350px',                     //height of tab image           //Optionally can be set using css
-			            imageWidth: '50px',                       //width of tab image            //Optionally can be set using css
+			            pathToTabImage: '<?php bloginfo("template_url"); ?>/images/Book_Now_Tab.png', //path to the image for the tab //Optionally can be set using css
+			            imageHeight: '179px',                     //height of tab image           //Optionally can be set using css
+			            imageWidth: '40px',                       //width of tab image            //Optionally can be set using css
 			            tabLocation: 'right',                      //side of screen where tab lives, top, right, bottom, or left
 			            speed: 300,                               //speed of animation
 			            action: 'click',                          //options: 'click' or 'hover', action to trigger animation
-			            topPos: '30px',                          //position from the top/ use if tabLocation is left or right
+			            topPos: '60px',                          //position from the top/ use if tabLocation is left or right
 			            leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
 			            fixedPosition: true                    //options: true makes it stick(fixed position) on scroll
 			        });
