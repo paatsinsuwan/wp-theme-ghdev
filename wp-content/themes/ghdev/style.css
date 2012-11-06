@@ -117,7 +117,7 @@ body {
 #home_primary {
 	padding-top: 2em;
 	float: left;
-	margin: 0 0 4em 0;
+	margin: 0;
 	width: 65%;
 }
 
@@ -2054,9 +2054,13 @@ section.ephemera .entry-title a span {
 	border-radius: 10px;
 }
 
+#endorsements {
+	list-style-type: none;
+}
+
 #endorsements li{
-	display: inline-block;
 	margin: 5px;
+	float: left;
 }
 
 .widget_text{
@@ -2445,7 +2449,7 @@ footer {
 }
 #supplementary {
 	border-top: 1px solid #ddd;
-	padding: 3.625em 7.6% 1.625em;
+	padding: 4.625em 7.6% 1.625em;
 	overflow: hidden;
 }
 
@@ -2467,6 +2471,10 @@ footer {
 }
 #supplementary.three .widget-area + .widget-area + .widget-area {
 	margin-right: 0;
+}
+
+#supplementary.three .widget-area .widget-title {
+	font-size: 110%;
 }
 
 /* Site Generator Line */
@@ -2976,21 +2984,21 @@ footer {
 	width: 100px;
 	height: 100px;
 	margin: 25px;
-	border-radius: 50px;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	-o-border-radius: 50px;
+	border-radius: 60px;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	-o-border-radius: 60px;
 	text-align: center;
+	padding: 0.4em;
 }
 .menu-bottom-container ul li a{
-	padding: 0 15px;
 	width: 100px;
 	height: 100px;
 	display: table-cell;
 	vertical-align: middle;
 	color: #fff;
-	font-size: 80%;
-	font-weight: bold;
+	font-size: 90%;
+	font-weight: normal;
 }
 
 /*--------------- destinations-primary -----------*/
