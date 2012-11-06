@@ -2449,7 +2449,7 @@ footer {
 }
 #supplementary {
 	border-top: 1px solid #ddd;
-	padding: 4.625em 7.6% 1.625em;
+	padding: 4.625em 7.6% 0.325em;
 	overflow: hidden;
 }
 
@@ -2480,12 +2480,8 @@ footer {
 /* Site Generator Line */
 #site-generator {
 	margin: 0 7.6%;
-	/*width: 90%;*/
-	border-top: 3px solid #000 !important;
-	padding: 1.625em 0;/*7.6%;*/
-	/*background: #f9f9f9;*/
-	border-top: 1px solid #ddd;
-	color: #666;
+	padding: 0 0 1.625em 0;
+	color: #fff;
 	font-size: 12px;
 	line-height: 2.2em;
 	text-align: center;
