@@ -118,11 +118,20 @@ body {
 	padding-top: 2em;
 	float: left;
 	margin: 0 0 4em 0;
-	width: 70%;
+	width: 65%;
 }
 
 #home_primary ul {
 	list-style-image: url(images/favicon.ico);
+}
+
+#home_primary #content {
+	margin: 0 7.6% 0 3%;
+}
+
+#home_primary #content ul li {
+	float: left;
+	width: 50%;
 }
 
 #about_primary {
@@ -225,7 +234,7 @@ body {
 #secondary {
 	float: right;
 	width: 18.8%;
-	margin: 2em 9.3em 0 0;
+	margin: 2em 11.7em 0 0;
 }
 
 #featured-destinations-primary {
