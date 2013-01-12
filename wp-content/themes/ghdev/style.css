@@ -227,10 +227,6 @@ body {
 	border-radius: 10px;
 }
 
-#contact_primary article {
-	padding-top: 0;
-}
-
 #secondary {
 	float: right;
 	width: 18.8%;
@@ -3143,4 +3139,29 @@ footer {
 .social-links.clearfix ul {
     padding: 0 !important;
     margin: 1em 5em 0 0 !important;
+}
+
+/*Contact Page*/
+
+#contact_primary article {
+	padding-top: 0;
+}
+
+#contact_primary #content{
+	margin: 1.66em;
+}
+
+#contact_primary article header {
+	margin: 0;
+}
+
+#contact_primary .entry-content {
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+#contact_primary .entry-content div.clearfix a img {
+    float: left; 
+    width: 80%;
+    margin-right: 2em;
 }
