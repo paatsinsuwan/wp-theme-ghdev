@@ -3035,10 +3035,12 @@ footer {
 }
 
 #destination-primary #content ul li{
-	display: inline-block;
+	/*display: inline-block;
 	width: 33%;
-	text-align: center;
+	text-align: center;*/
 	vertical-align: top;
+	margin: 1em;
+
 }
 
 #destination-primary #content ul li p{
