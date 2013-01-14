@@ -679,7 +679,7 @@ function custom_editor_style() {
 		'name' => 'Ads Sidebar',
 		'id' => 'ads-sidebar',
 		'description' => 'Appears as the sidebar on all blog posts',
-		'before_widget' => '<div style="height: 280px"></div><li id="%1$s" class="widget %2$s">',
+		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h2 class="widgettitle">',
 		'after_title' => '</h2>',
