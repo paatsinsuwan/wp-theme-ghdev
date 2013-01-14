@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Contact Page Template
- * The homepage template file.
+ * The contact template file.
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).

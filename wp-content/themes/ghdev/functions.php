@@ -674,6 +674,18 @@ function custom_editor_style() {
 
  add_action( 'admin_head', 'custom_editor_style' );
 
+ if ( function_exists('register_sidebar') ) {
+	register_sidebar(array(
+		'name' => 'Ads Sidebar',
+		'id' => 'ads-sidebar',
+		'description' => 'Appears as the sidebar on all blog posts',
+		'before_widget' => '<div style="height: 280px"></div><li id="%1$s" class="widget %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h2 class="widgettitle">',
+		'after_title' => '</h2>',
+	));
+}
+
 // add_action( 'init', 'create_featured_destinations' );
 
 // function create_featured_destinations() {

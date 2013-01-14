@@ -3165,3 +3165,9 @@ footer {
     width: 80%;
     margin-right: 2em;
 }
+
+/*Articles Footer*/
+article footer.entry-meta {
+    background-color: #fff;
+    padding: 0;
+}
