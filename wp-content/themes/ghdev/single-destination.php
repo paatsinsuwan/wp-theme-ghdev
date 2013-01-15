@@ -28,7 +28,7 @@ get_header(); ?>
 						// The Loop
 						echo '<ul>';
 						while ( have_posts() ) : the_post();
-							echo '<li>';
+							echo '<li class="related-posts">';
 							echo "<a href='".get_permalink()."'>" . get_the_post_thumbnail() . "</a>";
 							echo the_excerpt();
 							echo '</li>';

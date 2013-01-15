@@ -3031,12 +3031,15 @@ footer {
 }
 
 #destination-primary #content ul li{
-	/*display: inline-block;
-	width: 33%;
-	text-align: center;*/
+	display: inline-block;
+	/*width: 33%;*/
+	/*text-align: center;*/
 	vertical-align: top;
 	margin: 1em;
+}
 
+#destination-primary li.related-post {
+	width: 33%;
 }
 
 #destination-primary #content ul li p{
