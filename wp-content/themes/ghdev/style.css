@@ -3038,8 +3038,8 @@ footer {
 	margin: 1em;
 }
 
-#destination-primary li.related-post {
-	width: 33%;
+#destination-primary #content ul li.related-posts {
+	width: 30%;
 }
 
 #destination-primary #content ul li p{
