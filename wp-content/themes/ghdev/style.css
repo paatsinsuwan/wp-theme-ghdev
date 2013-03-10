@@ -3174,3 +3174,9 @@ article footer.entry-meta {
     background-color: #fff;
     padding: 0;
 }
+
+/*easingSliderCustom*/
+.easingsliderlite.use-slide.use-css3 {
+    margin: 0 auto !important;
+    box-shadow: 0px 3px 10px #999;
+}

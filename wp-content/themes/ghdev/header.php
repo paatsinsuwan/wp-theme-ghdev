@@ -98,7 +98,7 @@
 				// Check to see if the header image has been removed
 				// $header_image = get_header_image();
 				if(is_front_page()){
-					if (function_exists(s3slider_show())) { s3slider_show(); }	
+					if ( function_exists( "easingsliderlite" ) ) { easingsliderlite(); }
 				}
 				else{
 					?>
