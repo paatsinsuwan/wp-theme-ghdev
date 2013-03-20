@@ -78,8 +78,8 @@
 	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 	<div class="social-links clearfix">
 		<ul class="clearfix">
-			<li id="facebook-button"><a href="http://www.facebook.com">facebook</a></li>
-			<li id="twitter-button"><a href="http://www.twitter.com">twitter</a></li>
+			<li id="facebook-button"><a href="http://www.facebook.com" target="_blank">facebook</a></li>
+			<li id="twitter-button"><a href="http://www.twitter.com" target="_blank">twitter</a></li>
 		</ul>
 		
 		
