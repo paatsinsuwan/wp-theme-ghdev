@@ -2474,6 +2474,11 @@ footer {
 	font-size: 110%;
 }
 
+ul.center-footer li:before {
+	content: "● ";
+	color: #e68028;
+}
+
 /* Site Generator Line */
 #site-generator {
 	margin: 0 7.6%;
