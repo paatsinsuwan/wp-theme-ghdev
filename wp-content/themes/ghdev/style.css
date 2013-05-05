@@ -136,8 +136,8 @@ body {
 
 #about_primary {
 	float: left;
-	margin: 0 0 4em 2em;
-	/*width: 100%;*/
+	margin-bottom:4em;
+	width: 65%;
 	display: inline;
 }
 
@@ -154,7 +154,7 @@ body {
 #about_primary #content p a img{
 	padding: 0.45em;
 	background: #0483B9;
-	width: 60%;
+	width: 90%;
 }
 
 #about_primary #content ul {
@@ -163,7 +163,7 @@ body {
 }
 
 #about_primary #content ul li {
-	width: 33%;
+	width: 45%;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -3190,4 +3190,14 @@ article footer.entry-meta {
     /*filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
 	zoom: 1;*/
+}
+
+#the-mission {
+	padding-right: 2em;
+}
+
+#the-mission h2{
+	font-weight: bold;
+	font-size: 150%;
+	margin-bottom: 1em; 
 }

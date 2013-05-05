@@ -16,16 +16,15 @@
 get_header(); ?>
 
 		<div id="about_primary">
-			<div id="content" role="main" class="clearfix">
+			<div id="content" role="main">
 
 				<?php while ( have_posts() ) : the_post(); ?>
-					<?php get_sidebar(); ?>
-					<?php $content = get_the_content();//get_template_part( 'content', get_post_format() ); ?>
-					<p><?php echo $content; ?></p>
+					<?php the_content(); ?>
 				<?php endwhile; ?>
 
 				
 			</div><!-- #content -->
 		</div><!-- #primary -->
+		<div id="sidebar" role="sidebar"><?php get_sidebar(); ?></div>
 
 <?php get_footer(); ?>
