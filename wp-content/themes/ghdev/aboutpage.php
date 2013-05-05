@@ -25,6 +25,9 @@ get_header(); ?>
 				
 			</div><!-- #content -->
 		</div><!-- #primary -->
-		<div id="sidebar" role="sidebar"><?php get_sidebar(); ?></div>
+		<div id="sidebar" role="sidebar">
+			<style type="text/css">.ui-datepicker{margin-left:6em;}</style>
+			<?php get_sidebar(); ?>
+		</div>
 
 <?php get_footer(); ?>

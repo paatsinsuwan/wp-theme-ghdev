@@ -64,7 +64,9 @@
 	 * generally use this hook to add elements to <head> such
 	 * as styles, scripts, and meta tags.
 	 */
+	wp_enqueue_script('jquery-custom-ui', get_template_directory_uri()."/js/jquery-ui-1.10.3.custom.min.js", 'jquery', null, 'in_footer');
 	wp_head();
+
 ?>
 </head>
 
@@ -103,7 +105,7 @@
 				else{
 					?>
 					<div id="top-info-bar">
-						For Hassle-Free Booking, Book With Group Hotels! Fill out the form below or phone us: 1 - 877 - 826 - 6548.
+						For Hassle-Free Booking, Book With Group Hotels! Fill out the form below or phone us: 1-877-826-6548.
 					</div>
 					<?php
 				}

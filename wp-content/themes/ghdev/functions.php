@@ -192,6 +192,7 @@ function twentyeleven_setup() {
 			'description' => __( 'Hanoi Plant', 'twentyeleven' )
 		)
 	) );
+	wp_enqueue_style("jquery-ui-css", get_template_directory_uri()."/jquery-ui-1.10.3.custom.min.css", null , null, false );
 }
 endif; // twentyeleven_setup
 
@@ -667,7 +668,8 @@ function custom_editor_style() {
    add_editor_style(
    array(
       'editor-style.css',
-      'editor-style-'.$current_screen->post_type.'.css'
+      'editor-style-'.$current_screen->post_type.'.css',
+      'editor-style-'.$current_screen->post_type.'-about.css'
     )
    );
  }
@@ -684,6 +686,20 @@ function custom_editor_style() {
 		'before_title' => '<h2 class="widgettitle">',
 		'after_title' => '</h2>',
 	));
+}
+
+add_filter( 'tiny_mce_before_init', 'tuts_mce_before_init' );
+function tuts_mce_before_init( $settings ) {
+
+    $style_formats = array(
+        array(
+            'title' => 'My Style',
+            'selector' => 'p',
+            'classes' => 'myclass',
+        )
+    );
+    $settings['style_formats'] = json_encode( $style_formats );
+    return $settings;
 }
 
 // add_action( 'init', 'create_featured_destinations' );
