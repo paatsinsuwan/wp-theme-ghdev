@@ -160,7 +160,7 @@
             });
             
             $(document).click(function(){
-                slideIn();
+                if(jQuery('#lowestPopup').css('display') == 'none'){slideIn();}
             });
         };
         
@@ -183,7 +183,7 @@
                 },
                 
                 function(){
-                    slideIn();
+                    if(jQuery('#lowestPopup').css('display') == 'none'){slideIn();}
                 });
                 
                 settings.tabHandle.click(function(event){
