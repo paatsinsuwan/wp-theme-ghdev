@@ -80,8 +80,8 @@
 	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 	<div class="social-links clearfix">
 		<ul class="clearfix">
-			<li id="facebook-button"><a href="http://www.facebook.com" target="_blank">facebook</a></li>
-			<li id="twitter-button"><a href="http://www.twitter.com" target="_blank">twitter</a></li>
+			<li id="facebook-button"><a href="https://www.facebook.com/grouphotels" target="_blank">facebook</a></li>
+			<li id="twitter-button"><a href="https://twitter.com/grouphotelscom" target="_blank">twitter</a></li>
 		</ul>
 		
 		
